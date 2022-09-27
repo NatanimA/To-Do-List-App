@@ -6,10 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wbpack Exercise</title>
     <script src="../dist/index.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/6aa618e8c3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Hello webpack!</h1>
+    <section id="todo">
+        <div id="todo-header">
+            <h3>To do list</h3>
+            <span class="font-awsome-icon"><i class="fa-solid fa-recycle"></i></span>
+        </div>
+        <div class="inputs-holder">
+            <input type="text" name="tasks" id="input-tasks" placeholder="Add your tasks...">
+            <span class="add">&crarr;</span>
+        </div>
+
+        <ul id="todo-lists">
+
+        </ul>
+
+        <button id="clear" value="clear" type="button">Clear </button>
+    </section>
 </body>
 
 </html>

@@ -106,3 +106,24 @@ button:hover {
   border: 1px solid salmon;
   color: #fff;
 }
+
+.alt-fa {
+  display: none;
+}
+
+.trash-active{
+  display: block;
+}
+
+
+.checked-holder {
+  background:rgb(255, 234, 222);
+}
+
+.line-through{
+  text-decoration: line-through;
+}
+
+.dots-remove {
+  display: none;
+}

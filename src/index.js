@@ -2,6 +2,9 @@
 import './index.css';
 
 const toDoList = document.querySelector('#todo-lists');
+const toDoSection = document.querySelector('.todo');
+const textInput = document.querySelector('iinput-form"');
+
 
 const tasks = [
   {

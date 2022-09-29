@@ -36,16 +36,17 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 
-li {
+.todo-list-container {
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  margin-top: 20px;
   justify-content: stretch;
   border-bottom: 1px solid silver;
 }
 
-li i {
+.todo-list-container i {
   position: absolute;
   right: 0;
   top: 3px;
@@ -105,4 +106,24 @@ button:hover {
   background-color: rgb(218, 181, 163);
   border: 1px solid salmon;
   color: #fff;
+}
+
+.alt-fa {
+  display: none;
+}
+
+.trash-active {
+  display: block;
+}
+
+.checked-holder {
+  background: rgb(255, 234, 222);
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.dots-remove {
+  display: none;
 }

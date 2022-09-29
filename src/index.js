@@ -1,59 +1,34 @@
 /* eslint-disable max-classes-per-file */
 import './index.css';
 
-const toDoList = document.querySelector('#todo-lists');
+import TasksObject from './modules/tasksObject.js';
+import WindowLoader from './modules/windowsLoader.js';
+import LocalDataStorage from './modules/localStorage.js';
+import CreateTasks from './modules/createTasks.js';
 
-const tasks = [
-  {
-    index: 5,
-    description: 'Meskel holiday celebration with family',
-    completed: false,
-  },
+const textInput = document.querySelector('.input-form');
 
-  {
-    index: 4,
-    description: 'Learn Javascript Es6',
-    completed: false,
-  },
+const tasks = [];
 
-  {
-    index: 3,
-    description: 'Be active on linked in and seek job opportunities',
-    completed: false,
-  },
-
-  {
-    index: 2,
-    description: 'Read a book a minimum of 10 pages',
-    completed: false,
-  },
-
-  {
-    index: 1,
-    description: 'Go to the gym and workout',
-    completed: false,
-  },
-];
-
-class CreateTasks {
-    static create = (add) => {
-      const task = document.createElement('li');
-      task.innerHTML += `<input type="checkbox" name="complete" class="complete"
-        ${add.completed ? 'complete' : ''}>
-        <p> ${add.description}</p>
-        <i class="fa-solid fa-ellipsis-vertical"></i>`;
-
-      toDoList.appendChild(task);
+textInput.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter' && textInput.value) {
+    const taskObject = new TasksObject(textInput.value, false, tasks.length);
+    tasks.push(taskObject);
+    CreateTasks.createTask(tasks);
+    const content = document.querySelectorAll('.content');
+    for (let index = 0; index < content.length; index += 1) {
+      content[index].textContent = tasks[index].description;
     }
-}
 
-class DisplayTasks {
-    static displayTask = () => {
-      tasks.sort(((a, b) => a.index - b.index));
-      tasks.forEach((add) => {
-        CreateTasks.create(add);
-      });
-    }
-}
+    textInput.value = null;
+    LocalDataStorage.addToLocalDataStorage(tasks);
+  }
+});
 
-DisplayTasks.displayTask();
+const localData = JSON.parse(localStorage.getItem('todo'));
+
+localData.forEach((element) => {
+  tasks.push(element);
+});
+
+WindowLoader.loadWindow(tasks);

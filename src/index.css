@@ -46,7 +46,7 @@ body {
   border-bottom: 1px solid silver;
 }
 
- .todo-list-container i {
+.todo-list-container i {
   position: absolute;
   right: 0;
   top: 3px;
@@ -112,16 +112,15 @@ button:hover {
   display: none;
 }
 
-.trash-active{
+.trash-active {
   display: block;
 }
 
-
 .checked-holder {
-  background:rgb(255, 234, 222);
+  background: rgb(255, 234, 222);
 }
 
-.line-through{
+.line-through {
   text-decoration: line-through;
 }
 

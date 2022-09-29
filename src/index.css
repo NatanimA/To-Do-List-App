@@ -36,16 +36,17 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 
-li {
+.todo-list-container {
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  margin-top: 20px;
   justify-content: stretch;
   border-bottom: 1px solid silver;
 }
 
-li i {
+ .todo-list-container i {
   position: absolute;
   right: 0;
   top: 3px;

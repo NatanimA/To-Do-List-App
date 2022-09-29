@@ -1,4 +1,5 @@
 const toDoList = document.querySelector('#todo-lists');
+const clearBtn = document.querySelector('button');
 
 export default class CreateTasks {
     static createTask = () => {
@@ -35,6 +36,21 @@ export default class CreateTasks {
           filter.push(localData[i]);
           localStorage.setItem('todo', JSON.stringify(filter));
         }
+      });
+
+      clearBtn.addEventListener('click', () => {
+        const localData = JSON.parse(localStorage.getItem('todo'));
+        const checkedTasks = document.querySelectorAll('.checked-holder');
+        const filter = [];
+        for (let i = 0; i < checkedTasks.length; i += 1) {
+          toDoList.removeChild(checkedTasks[i]);
+        }
+        for (let i = 0; i < localData.length; i += 1) {
+          if (localData[i].completed !== true) {
+            filter.push(localData[i]);
+          }
+        }
+        localStorage.setItem('todo', JSON.stringify(filter));
       });
 
       trash.addEventListener('click', () => {

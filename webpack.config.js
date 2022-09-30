@@ -16,6 +16,7 @@ module.exports = {
   output: {
     filename: 'index.bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: "/To-Do-List-App/",
     clean: true,
   },
 
@@ -27,5 +28,5 @@ module.exports = {
       },
     ],
   },
-  mode: 'development',
+  mode: 'production',
 };

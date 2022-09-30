@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NatanimA/To-Do-List-App.git"
+    "url": "git+https://github.com/NatanimA/To-Do-List-App.git/dist"
   },
   "keywords": [],
   "author": "",

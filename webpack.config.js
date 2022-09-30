@@ -16,7 +16,7 @@ module.exports = {
   output: {
     filename: 'index.bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: "/To-Do-List-App/",
+    publicPath: "/To-Do-List-App/dist",
     clean: true,
   },
 

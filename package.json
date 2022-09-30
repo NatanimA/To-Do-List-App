@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/NatanimA/To-Do-List-App/issues"
   },
-  "homepage": "https//natanima.github.io/To-Do-List-App/dist",
+  "homepage": "https//natanima.github.io/To-Do-List-App/",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",

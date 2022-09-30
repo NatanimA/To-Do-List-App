@@ -48,10 +48,10 @@ export default class CreateTasks {
             filter.push(localData[index]);
           }
         }
-        let i=0;
-        while(i < filter.length){
+        let i = 0;
+        while (i < filter.length) {
           filter[i].index = i;
-          i++;
+          i += 1;
         }
 
         localStorage.setItem('todo', JSON.stringify(filter));

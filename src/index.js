@@ -14,7 +14,7 @@ textInput.addEventListener('keypress', (event) => {
   if (event.key === 'Enter' && textInput.value) {
     const taskObject = new TasksObject(textInput.value, false, tasks.length);
     tasks.push(taskObject);
-    CreateTasks.createTask(tasks);
+    CreateTasks.createTask();
     const content = document.querySelectorAll('.content');
     for (let index = 0; index < content.length; index += 1) {
       content[index].textContent = tasks[index].description;
@@ -31,4 +31,4 @@ localData.forEach((element) => {
   tasks.push(element);
 });
 
-WindowLoader.loadWindow(tasks);
+WindowLoader.loadWindow();

@@ -4,8 +4,8 @@
 import TasksObject from '../modules/tasksObject.js';
 import LocalStorage from '../modules/localStorage.js'
 
-describe('Addition and removal of the task from local storage', () => {
-    test('Check add Tasks to localStorage', () => {
+describe('Addition and removal of the tasks', () => {
+    test('Check add Tasks', () => {
         const tasks = new TasksObject('Celebrate',false,0);
         LocalStorage.addToLocalDataStorage(tasks);
         const todo = LocalStorage.getFromLocalStorage();

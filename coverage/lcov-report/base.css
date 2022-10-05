@@ -269,6 +269,19 @@ table.coverage td span.cline-any {
   color: #111;
 }
 
+.cover-fill {
+  width: 93%;
+}
+
+.cover-empty {
+  width: 7%;
+  background: white;
+}
+
+.cover-empty2 {
+  width: 0;
+}
+
 .cover-fill,
 .cover-empty {
   display: inline-block;
@@ -373,12 +386,9 @@ span.cline-neutral {
   color: #888;
 }
 
-.cover-empty {
-  background: white;
-}
-
 .cover-full {
   border-right: none !important;
+  width: 100%;
 }
 
 pre.prettyprint {

@@ -26,4 +26,20 @@ export default class LocalDataStorage {
 
     localStorage.setItem('test', JSON.stringify(filter));
   }
+
+  static updateContent(index, content) {
+    const tasks = LocalDataStorage.getFromLocalStorage();
+    if (tasks[index]) {
+      tasks[index].description = content;
+    }
+    localStorage.setItem('test', JSON.stringify(tasks));
+  }
+
+  static updateStatus(index) {
+    const tasks = LocalDataStorage.getFromLocalStorage();
+    if (tasks[index]) {
+      tasks[index].completed = true;
+    }
+    localStorage.setItem('test', JSON.stringify(tasks));
+  }
 }

@@ -32,3 +32,4 @@ localData.forEach((element) => {
 });
 
 WindowLoader.loadWindow();
+export default tasks;

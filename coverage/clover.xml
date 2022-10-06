@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<coverage generated="1664990543203" clover="3.2.0">
+  <project timestamp="1664990543203" name="All files">
+    <metrics statements="16" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5" elements="23" coveredelements="22" complexity="0" loc="16" ncloc="16" packages="1" files="2" classes="2"/>
+    <file name="localStorage.js" path="C:\Users\na\To-Do-List-App\src\modules\localStorage.js">
+      <metrics statements="13" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <line num="4" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="9" count="4" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+=======
+<coverage generated="1665048976406" clover="3.2.0">
+  <project timestamp="1665048976406" name="All files">
+    <metrics statements="24" coveredstatements="23" conditionals="6" coveredconditionals="4" methods="7" coveredmethods="7" elements="37" coveredelements="34" complexity="0" loc="24" ncloc="24" packages="1" files="2" classes="2"/>
+    <file name="localStorage.js" path="C:\Users\user\Documents\Experiments And Training Lab\Microverse-Projects\To-Do-List-App\src\modules\localStorage.js">
+      <metrics statements="21" coveredstatements="20" conditionals="6" coveredconditionals="4" methods="6" coveredmethods="6"/>
+      <line num="5" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="9" count="8" type="stmt"/>
+      <line num="11" count="10" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="0" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="43" count="1" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
+>>>>>>> 301c43e6aa5f1dbf63d977a7ec504e2b2b1331d1
+    </file>
+    <file name="tasksObject.js" path="C:\Users\na\To-Do-List-App\src\modules\tasksObject.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>

@@ -8,7 +8,7 @@ import CreateTasks from './modules/createTasks.js';
 
 const textInput = document.querySelector('.input-form');
 
-export const tasks = [];
+const tasks = [];
 
 textInput.addEventListener('keypress', (event) => {
   if (event.key === 'Enter' && textInput.value) {
@@ -32,3 +32,4 @@ localData.forEach((element) => {
 });
 
 WindowLoader.loadWindow();
+export default tasks;
